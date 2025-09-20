@@ -1,22 +1,32 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Zoro’s Lost Path CTF</title>
-<style>body{font-family:Arial;background:#0a0a0a;color:#e0e0e0;padding:30px} .card{max-width:900px;margin:0 auto;background:#111;padding:25px;border-radius:8px} img{width:100%;max-width:760px;border-radius:6px}</style>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Zoro’s Lost Path CTF</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;background:#0a0a0a;color:#e8e8e8;margin:0;padding:36px}
+    .card{max-width:900px;margin:0 auto;background:#0f1114;padding:28px;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+    h1{color:#2ecc71;margin:0 0 12px}
+    p.lead{color:#cfd8dc;margin:6px 0 18px;font-size:18px}
+    img{width:100%;max-width:760px;border-radius:8px;margin-top:18px;display:block}
+    footer{color:#8b9aa3;margin-top:18px;font-size:13px}
+  </style>
 </head>
 <body>
   <div class="card">
-    <h1>⚔<fe0f> Zoro’s Lost Path</h1>
-    <p>Open Developer Tools → Console to find the next image.</p>
+    <h1>⚔️ Zoro’s Lost Path</h1>
+    <p class="lead">Zoro is strong with his swords — but hopeless with directions. Help him find his crew by following the clues hidden along the way.</p>
     <img src="cover2.jpg" alt="Zoro banner">
+    <footer>Open your browser's Developer Tools → Console to continue.</footer>
   </div>
 
   <script>
-    const NOTE = "Open the Console to find the next image and continue the path.";
-    const COVER3_RAW = "https://raw.githubusercontent.com/cola64/ZORO/main/cover3.jpg";
+    // Console-only hint — players must open DevTools → Console
+    const NEXT_RAW = "https://raw.githubusercontent.com/cola64/ZORO/main/cover3.jpg";
     console.log("=== dev note ===");
-    console.log(NOTE);
-    console.log("Download the next image here: " + COVER3_RAW);
-    console.log("Hint: Extract the hidden file from that image with the right password.");
+    console.log("Download the next image here: " + NEXT_RAW);
+    console.log("Extract the hidden file from that image with the right password.");
   </script>
 </body>
 </html>
