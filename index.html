@@ -1,31 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zoro’s Lost Path CTF</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0a0a0a;
-            color: #e0e0e0;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 { color: #2ecc71; }
-        p { font-size: 18px; margin: 20px 0; }
-        img { width: 70%; border-radius: 15px; margin-top: 20px; box-shadow: 0 0 15px rgba(0,0,0,0.7); }
-        .flag-hint { margin-top: 40px; font-style: italic; color: #bdc3c7; }
-    </style>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Zoro’s Lost Path CTF</title>
+<style>body{font-family:Arial;background:#0a0a0a;color:#e0e0e0;padding:30px} .card{max-width:900px;margin:0 auto;background:#111;padding:25px;border-radius:8px} img{width:100%;max-width:760px;border-radius:6px}</style>
 </head>
 <body>
-    <h1>⚔️ Welcome to Zoro’s Lost Path CTF ⚔️</h1>
-    <p>Roronoa Zoro is strong with his swords, but always lost in his path.</p>
-    <p>Your task is to help him find the right direction by solving hidden challenges.</p>
-    <p>Each step you take reveals a <b>flag</b> — guiding Zoro back to his crew.</p>
-    <img src="cover2.jpg" alt="Zoro CTF Banner">
-    <div class="flag-hint">
-        “The world’s greatest swordsman is always lost... but will you find the way?”
-    </div>
+  <div class="card">
+    <h1>⚔️ Zoro’s Lost Path</h1>
+    <p>Open Developer Tools → Console to find the next image.</p>
+    <img src="cover2.jpg" alt="Zoro banner">
+  </div>
+
+  <script>
+    const NOTE = "Open the Console to find the next image and continue the path.";
+    const COVER3_RAW = "https://raw.githubusercontent.com/cola64/ZORO/main/cover3.jpg";
+    console.log("=== dev note ===");
+    console.log(NOTE);
+    console.log("Download the next image here: " + COVER3_RAW);
+    console.log("Hint: Extract the hidden file from that image with the right password (use rockyou.txt).");
+  </script>
 </body>
 </html>
